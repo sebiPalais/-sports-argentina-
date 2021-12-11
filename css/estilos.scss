@@ -1,0 +1,337 @@
+* { 
+	font-family: 'Titillium Web', sans-serif; 
+}
+
+
+body {
+	background-color: #000000;  
+}
+
+.navbar{ 
+	flex-wrap: nowrap;
+}
+
+
+
+h1 {
+	color: #e43a19;
+	background-color: #111f4d;
+	text-align: center;
+	letter-spacing: 3px;
+	font-family: 'ZCOOL KuaiLe', cursive;
+	z-index: 1; 
+}
+
+nav { 
+	font-family: 'Titillium Web', sans-serif;
+	font-weight: bold;
+	ul {
+		list-style: none;
+		background-color: #e43a19;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+		
+		
+		li { 
+			display: inline-block;
+			position: relative;
+			font-size: 14px;
+			flex-grow: 1;
+			flex-basis: 0;
+			
+			&:hover ul {
+				@media (min-width: 990px) {
+					display:block;
+				}
+				
+			}
+			a { 
+				&:hover { 
+					color: #e43a19;
+				}
+				display: inline-block;
+				padding-right: 45px;
+				text-decoration: none;
+				color: #111f4d;
+			}
+			
+		}
+		ul { 
+			.submenu { 
+				background-color: #e43a19;
+				position: absolute;
+				display: none;
+				z-index: 10;
+				justify-content: left;
+				left: 100%;
+				top: 0;   
+			} 
+			
+			li {
+				display: inline-block;
+				flex-direction: row;
+				position: relative;
+				width: 150px;
+			}
+		}
+	}
+	
+}
+
+.ImgV {
+	border-radius: 30px;
+	width: 100%; /*====  FORMULALO: IMG RESPONSIVE SI O SI, NO SE PUEDE DEFINIR TAMAÑO EN PX DE LAS IMG*/
+	height: auto;
+}
+.Subtitulo {    
+	text-align: center;
+	grid-area: subt;
+}
+
+.footer { 
+	padding: 30px;
+	margin-top: 25px;
+	display: flex;
+	justify-content: center;
+}
+
+h2 {
+	color: #e43a19;            
+	background-color: #111f4d; 
+	font-weight: bold;
+	margin-bottom: 0px;
+	text-align: center;
+}
+.Pcambio { 
+	margin: 20px 0px;
+}
+
+h3 { 
+	color: #e43a19;            
+	background-color: #111f4d; 
+	font-weight: bold;
+	margin-bottom: 0px;
+	text-align: center;
+}
+
+form { 
+	text-align: center;
+	legend {
+		color: #e43a19;            
+		background-color: #111f4d; 
+		font-weight: bold;
+		margin-bottom: 0px;
+	}       
+	fieldset {
+		display: flex;
+		flex-direction: column;
+		gap: 20px;
+		padding: 20px;
+		max-width: 760px;
+		margin: 0 auto;
+		display: grid;
+		@media (min-width: 420px) {
+			grid-template-columns: 1fr 1fr 1fr;	
+		}
+		label { 
+			color: #f2f4f7;
+		}
+	}
+	
+	
+} 
+
+.botones {
+	display: flex;
+	justify-content: space-evenly;
+	padding-top: 35px;
+}
+
+.form2 { 
+	border: 10px solid #111f4d;
+}
+
+.pagosCuota {  
+	display: flex;
+	justify-content: space-around;
+}
+
+
+.sedes { 
+	margin-top: 50px;
+	color:#455d7a
+}
+
+.lugares { 
+	font-family: 'Titillium Web', sans-serif;
+	color:#f2f4f7;
+	margin: 15px;
+	.titulos { 
+		font-family: 'Titillium Web', sans-serif;
+		font-size: xx-large;
+		text-align: center;
+		color:#e43a19;
+		text-decoration:double;
+
+	}
+	.ubicacion { 
+		color: #e43a19;
+		font-size: x-large;
+		text-decoration: none;
+
+	}
+}
+
+.btn-primary {
+	color:  #e43a19;
+	background-color:  #000000;
+	border-color: #e43a19;
+}
+
+.parrafo1 { 
+	color: #f2f4f7;
+	font-weight: bold;
+	text-align: end;
+	margin-top: 20px;
+}
+.boton1 { 
+	text-align: end;
+}
+
+.navbar-light .navbar-toggler { 
+	color: #f2f4f7;
+	background-color: #f2f4f7;
+	border: 1px solid #f2f4f7;
+	//POSITION: FIXED ---- PARA QUE AL HACER SCROLL BAJE EL NAVBAR CONMIGO -- PONERLE FONDO NEGRO Y ENCIMA DE TODO (que cuando hago scroll, pase primero. z-index?)//
+}	
+.navbar-collapse {
+	@media (max-width: 990px) {
+	position: absolute;
+	right: 12px;
+	top: 90px;	
+	width: 160px;
+	z-index: 10;
+	}
+
+}
+.navbar-light .navbar-nav .nav-link {
+    padding: 7px;
+}
+.dropdown-menu.show {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center; 
+}
+
+
+#carrousel { 
+	display: flex;
+	flex-direction: column;
+	.lasClases { 
+		text-align: end;
+	}
+	@media (min-width: 1024px) {
+		flex-direction: row;
+	}
+}
+
+.piePag { 
+	background-color: #111f4d;
+	.pie { 
+		align-items: center;
+		.pieLogo { 
+			text-align: center;
+			img { 
+				max-width: 150px;
+				margin: 0 auto;
+			}
+			p {
+				text-align: center;
+			}
+		}
+	}
+	.parrafo2 {
+		color: #f2f4f7;
+		text-align: start;
+		font-size: small;
+	}
+	.copyright { 
+		color: #f2f4f7;
+		text-align: center;
+		font-size: smaller;
+		margin-top: 5px;
+	}
+	.redes { 
+		color:#f2f4f7;
+		text-align: center;
+	}
+}
+
+.apto { 
+	margin: 10vh 0;
+	p{ 
+		color: #f2f4f7;
+		margin-top: 15px;
+	}
+}
+
+section { 
+	p { 
+		margin-left: 20px;
+	}
+}
+
+.miTabla { 
+	overflow-x: auto;
+	table {
+		width: 100%;
+	}
+	
+	thead { 
+		color: #e43a19;
+	}
+	tbody { 
+		th { 
+			color: #e43a19 !important;
+		}
+		td { 
+			color:#f2f4f7 !important;
+		}
+		
+		
+	}
+		
+
+}
+.comentario { 
+	margin: 30px;
+}
+
+.Ubicacion { 
+	color: #f2f4f7;
+}
+
+
+.error { 
+	background-color: #000000;
+	div { 
+		margin: 150px;
+		border: solid 3px;
+		text-align: center;
+		padding: 5px;
+		
+		h2 { 
+			color: #e43a19;
+			background-color: #000000;
+		}
+		p { 
+			color: #e43a19;
+		}
+ 	}
+	.border-danger { 
+		border: 4px solid #e43a19 !important;
+
+	} 
+}
