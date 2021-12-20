@@ -6,14 +6,14 @@ body {
   background-color: #000000; }
 
 .navbar {
-  flex-wrap: nowrap; }
+  flex-wrap: nowrap;
+  padding-bottom: 100px; }
 
 h1 {
   color: #e43a19;
   background-color: #111f4d;
   text-align: center;
   letter-spacing: 3px;
-  font-family: 'ZCOOL KuaiLe', cursive;
   z-index: 1; }
 
 nav {
