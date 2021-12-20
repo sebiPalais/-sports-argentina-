@@ -186,7 +186,8 @@ form {
       flex-direction: row; } }
 
 .piePag {
-  background-color: #111f4d; }
+  background-color: #111f4d;
+  padding-top: 100px; }
   .piePag .pie {
     align-items: center; }
     .piePag .pie .pieLogo {
