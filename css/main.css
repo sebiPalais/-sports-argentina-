@@ -210,9 +210,11 @@ form {
     color: #f2f4f7;
     text-align: center; }
 
-.apto p {
-  color: #f2f4f7;
-  margin-top: 15px; }
+.apto {
+  margin-bottom: 50px; }
+  .apto p {
+    color: #f2f4f7;
+    margin-top: 15px; }
 
 section p {
   margin-left: 20px; }
