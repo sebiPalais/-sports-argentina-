@@ -7,7 +7,7 @@ body {
 
 .navbar {
   flex-wrap: nowrap;
-  padding-bottom: 100px; }
+  padding-bottom: 180px; }
 
 h1 {
   color: #e43a19;
@@ -187,7 +187,7 @@ form {
 
 .piePag {
   background-color: #111f4d;
-  padding-top: 100px; }
+  margin-top: 150px; }
   .piePag .pie {
     align-items: center; }
     .piePag .pie .pieLogo {
@@ -210,11 +210,9 @@ form {
     color: #f2f4f7;
     text-align: center; }
 
-.apto {
-  margin: 10vh 0; }
-  .apto p {
-    color: #f2f4f7;
-    margin-top: 15px; }
+.apto p {
+  color: #f2f4f7;
+  margin-top: 15px; }
 
 section p {
   margin-left: 20px; }
